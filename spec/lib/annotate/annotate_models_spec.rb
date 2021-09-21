@@ -262,7 +262,6 @@ describe AnnotateModels do
                 #  id   :integer          not null
                 #  name :string(50)       not null
                 #
-
               EOS
             end
 
@@ -288,7 +287,6 @@ describe AnnotateModels do
                 #  id   :integer          not null
                 #  name :enum             not null, (enum1, enum2)
                 #
-
               EOS
             end
 
@@ -322,7 +320,6 @@ describe AnnotateModels do
                 #  float   :float            unsigned, not null
                 #  decimal :decimal(10, 2)   unsigned, not null
                 #
-
               EOS
             end
 
@@ -357,7 +354,6 @@ describe AnnotateModels do
                   #  name  :string(50)       not null
                   #  notes :text(55)         not null
                   #
-
                 EOS
               end
 
@@ -385,7 +381,6 @@ describe AnnotateModels do
                   #  size :integer          default(20), not null
                   #  flag :boolean          default(FALSE), not null
                   #
-
                 EOS
               end
 
@@ -429,7 +424,6 @@ describe AnnotateModels do
                   #  author_name :string(50)       not null
                   #  title       :string(50)       not null
                   #
-
                 EOS
               end
 
@@ -462,7 +456,6 @@ describe AnnotateModels do
                 #  b_id :integer          not null, primary key
                 #  name :string(50)       not null
                 #
-
               EOS
             end
 
@@ -521,7 +514,6 @@ describe AnnotateModels do
                       #  index_rails_02e851e3b7  (id)
                       #  index_rails_02e851e3b8  (foreign_thing_id)
                       #
-
                     EOS
                   end
 
@@ -565,7 +557,6 @@ describe AnnotateModels do
                       #  index_rails_02e851e3b7  (id)
                       #  index_rails_02e851e3b8  (firstname,surname ASC,value DESC)
                       #
-
                     EOS
                   end
 
@@ -609,7 +600,6 @@ describe AnnotateModels do
                       #  index_rails_02e851e3b7  (id)
                       #  index_rails_02e851e3b8  (firstname,surname) WHERE value IS NOT NULL
                       #
-
                     EOS
                   end
 
@@ -653,7 +643,6 @@ describe AnnotateModels do
                       #  index_rails_02e851e3b7  (id)
                       #  index_rails_02e851e3b8  (firstname,surname) USING hash
                       #
-
                     EOS
                   end
 
@@ -683,7 +672,6 @@ describe AnnotateModels do
                       #  id               :integer          not null, primary key
                       #  foreign_thing_id :integer          not null
                       #
-
                     EOS
                   end
 
@@ -724,7 +712,6 @@ describe AnnotateModels do
                       #  id               :integer          not null, primary key
                       #  foreign_thing_id :integer          not null
                       #
-
                     EOS
                   end
 
@@ -757,7 +744,6 @@ describe AnnotateModels do
                       #  id   :integer          not null, primary key, indexed
                       #  name :string           not null
                       #
-
                     EOS
                   end
 
@@ -805,7 +791,6 @@ describe AnnotateModels do
                       #  fk_rails_...    (foreign_thing_id => foreign_things.id)
                       #  fk_rails_...    (third_thing_id => third_things.id)
                       #
-
                     EOS
                   end
 
@@ -839,7 +824,6 @@ describe AnnotateModels do
                       #
                       #  fk_rails_...  (foreign_thing_id => foreign_things.id) ON DELETE => on_delete_value ON UPDATE => on_update_value
                       #
-
                     EOS
                   end
 
@@ -869,7 +853,6 @@ describe AnnotateModels do
                     #  fk_rails_a70234b26c  (third_thing_id => third_things.id)
                     #  fk_rails_cf2568e89e  (foreign_thing_id => foreign_things.id)
                     #
-
                   EOS
                 end
 
@@ -905,7 +888,6 @@ describe AnnotateModels do
                     #  name   :string(50)       not null
                     #  notes  :text(55)         not null
                     #
-
                   EOS
                 end
 
@@ -930,7 +912,6 @@ describe AnnotateModels do
                     #  name   :string(50)       not null
                     #  notes  :text(55)         not null
                     #
-
                   EOS
                 end
 
@@ -955,7 +936,6 @@ describe AnnotateModels do
                     #  name   :string           not null
                     #  notes  :text             not null
                     #
-
                   EOS
                 end
 
@@ -989,7 +969,6 @@ describe AnnotateModels do
                     #  settings   :jsonb            not null
                     #  parameters :hstore           not null
                     #
-
                   EOS
                 end
 
@@ -1013,7 +992,6 @@ describe AnnotateModels do
                     #  settings   :jsonb            default({}), not null
                     #  parameters :hstore           default({}), not null
                     #
-
                   EOS
                 end
 
@@ -1037,7 +1015,6 @@ describe AnnotateModels do
                     #  settings   :jsonb            default({}), not null
                     #  parameters :hstore           default({}), not null
                     #
-
                   EOS
                 end
 
@@ -1071,7 +1048,6 @@ describe AnnotateModels do
                     #  name   :string(50)       not null
                     #  notes  :text(55)         not null
                     #
-
                   EOS
                 end
 
@@ -1110,7 +1086,6 @@ describe AnnotateModels do
                       #  notes(Notes)   :text(55)         not null
                       #  no_comment     :text(20)         not null
                       #
-
                     EOS
                   end
 
@@ -1150,7 +1125,6 @@ describe AnnotateModels do
                       #  no_comment                         :text(20)         not null
                       #  location                           :geometry_collect not null
                       #
-
                     EOS
                   end
 
@@ -1178,7 +1152,6 @@ describe AnnotateModels do
                       #  notes(Notes.\\nMay include things like notes.):text(55)         not null
                       #  no_comment                                   :text(20)         not null
                       #
-
                     EOS
                   end
 
@@ -1212,7 +1185,6 @@ describe AnnotateModels do
                       #  geometry :geometry         not null, geometry, 4326
                       #  location :geography        not null, point, 0
                       #
-
                     EOS
                   end
 
@@ -1260,7 +1232,6 @@ describe AnnotateModels do
                   #--
                   # == Schema Information End
                   #++
-
                 EOS
               end
 
@@ -1285,7 +1256,6 @@ describe AnnotateModels do
                   # @!attribute name
                   #   @return [String]
                   #
-
                 EOS
               end
 
@@ -1313,7 +1283,6 @@ describe AnnotateModels do
                     # **`id`**    | `integer`          | `not null, primary key`
                     # **`name`**  | `string(50)`       | `not null`
                     #
-
                   EOS
                 end
 
@@ -1355,7 +1324,6 @@ describe AnnotateModels do
                       # * `index_rails_02e851e3b8`:
                       #     * **`foreign_thing_id`**
                       #
-
                     EOS
                   end
 
@@ -1394,7 +1362,6 @@ describe AnnotateModels do
                       # * `index_rails_02e851e3b8` (_unique_):
                       #     * **`foreign_thing_id`**
                       #
-
                     EOS
                   end
 
@@ -1433,7 +1400,6 @@ describe AnnotateModels do
                       # * `index_rails_02e851e3b8`:
                       #     * **`foreign_thing_id DESC`**
                       #
-
                     EOS
                   end
 
@@ -1473,7 +1439,6 @@ describe AnnotateModels do
                       # * `index_rails_02e851e3b8` (_unique_ _where_ name IS NOT NULL):
                       #     * **`foreign_thing_id`**
                       #
-
                     EOS
                   end
 
@@ -1512,7 +1477,6 @@ describe AnnotateModels do
                       # * `index_rails_02e851e3b8` (_using_ hash):
                       #     * **`foreign_thing_id`**
                       #
-
                     EOS
                   end
 
@@ -1564,7 +1528,6 @@ describe AnnotateModels do
                       # * `fk_rails_...` (_ON DELETE => on_delete_value ON UPDATE => on_update_value_):
                       #     * **`foreign_thing_id => foreign_things.id`**
                       #
-
                     EOS
                   end
 
@@ -1599,7 +1562,6 @@ describe AnnotateModels do
                     #--
                     # == Schema Information End
                     #++
-
                   EOS
                 end
 
@@ -1635,7 +1597,6 @@ describe AnnotateModels do
                     # **`id(ID)`**      | `integer`          | `not null, primary key`
                     # **`name(Name)`**  | `string(50)`       | `not null`
                     #
-
                   EOS
                 end
 
@@ -1665,7 +1626,6 @@ describe AnnotateModels do
                     # **`id(ＩＤ)`**        | `integer`          | `not null, primary key`
                     # **`name(ＮＡＭＥ)`**  | `string(50)`       | `not null`
                     #
-
                   EOS
                 end
 
@@ -2581,7 +2541,7 @@ describe AnnotateModels do
       it "should put annotation before class if :position == #{position}" do
         annotate_one_file position: position
         expect(File.read(@model_file_name))
-          .to eq("#{@schema_info}#{@file_content}")
+          .to eq("#{@schema_info}\n#{@file_content}")
       end
     end
 
@@ -2596,7 +2556,7 @@ describe AnnotateModels do
     it 'should wrap annotation if wrapper is specified' do
       annotate_one_file wrapper_open: 'START', wrapper_close: 'END'
       expect(File.read(@model_file_name))
-        .to eq("# START\n#{@schema_info}# END\n#{@file_content}")
+        .to eq("# START\n#{@schema_info}# END\n\n#{@file_content}")
     end
 
     describe 'with existing annotation' do
@@ -2674,17 +2634,17 @@ describe AnnotateModels do
 
       it 'should retain current position' do
         annotate_one_file
-        expect(File.read(@model_file_name)).to eq("#{@file_content}\n#{@schema_info}\n")
+        expect(File.read(@model_file_name)).to eq("#{@file_content}\n#{@schema_info}")
       end
 
       it 'should retain current position even when :position is changed to :before' do
         annotate_one_file position: :before
-        expect(File.read(@model_file_name)).to eq("#{@file_content}\n#{@schema_info}\n")
+        expect(File.read(@model_file_name)).to eq("#{@file_content}\n#{@schema_info}")
       end
 
       it 'should change position to :before when force: true' do
         annotate_one_file position: :before, force: true
-        expect(File.read(@model_file_name)).to eq("#{@schema_info}#{@file_content}")
+        expect(File.read(@model_file_name)).to eq("#{@schema_info}\n#{@file_content}")
       end
     end
 
@@ -2708,7 +2668,7 @@ describe AnnotateModels do
                          ])
       schema_info = AnnotateModels.get_schema_info(klass, '== Schema Info')
       AnnotateModels.annotate_one_file(model_file_name, schema_info, position: :before)
-      expect(File.read(model_file_name)).to eq("#{schema_info}#{file_content}")
+      expect(File.read(model_file_name)).to eq("#{schema_info}\n#{file_content}")
     end
 
     it 'should not touch magic comments' do
@@ -2738,7 +2698,7 @@ describe AnnotateModels do
         annotate_one_file position: :before
         schema_info = AnnotateModels.get_schema_info(@klass, '== Schema Info')
 
-        expect(File.read(model_file_name)).to eq("#{magic_comment}\n\n#{schema_info}#{content}")
+        expect(File.read(model_file_name)).to eq("#{magic_comment}\n\n#{schema_info}\n#{content}")
       end
     end
 
@@ -2750,7 +2710,7 @@ describe AnnotateModels do
 
         annotate_one_file position: :before
 
-        expect(File.read(model_file_name)).to eq("#{magic_comment}\n\n#{schema_info}#{content}")
+        expect(File.read(model_file_name)).to eq("#{magic_comment}\n\n#{schema_info}\n#{content}")
       end
     end
 
