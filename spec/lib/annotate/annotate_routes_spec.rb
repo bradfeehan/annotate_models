@@ -20,7 +20,9 @@ describe AnnotateRoutes do
     "# frozen_string_literal: true\n# encoding: utf-8",
     '# frozen_string_literal: true',
     '#frozen_string_literal: false',
-    '# -*- frozen_string_literal : true -*-'
+    '# -*- frozen_string_literal : true -*-',
+    '# typed: true',
+    '#typed: false'
   ].freeze unless const_defined?(:MAGIC_COMMENTS)
 
   let :stubs do
@@ -97,7 +99,7 @@ describe AnnotateRoutes do
 
                     # ## Route Map
                     #
-                    # Prefix    | Verb       | URI Pattern     | Controller#Action   
+                    # Prefix    | Verb       | URI Pattern     | Controller#Action
                     # --------- | ---------- | --------------- | --------------------
                     # myaction1 | GET        | /url1(.:format) | mycontroller1#action
                     # myaction2 | POST       | /url2(.:format) | mycontroller2#action
@@ -189,7 +191,7 @@ describe AnnotateRoutes do
 
                         # ## Route Map
                         #
-                        # Prefix    | Verb       | URI Pattern     | Controller#Action   
+                        # Prefix    | Verb       | URI Pattern     | Controller#Action
                         # --------- | ---------- | --------------- | --------------------
                         # myaction1 | GET        | /url1(.:format) | mycontroller1#action
                         # myaction2 | POST       | /url2(.:format) | mycontroller2#action

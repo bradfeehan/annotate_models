@@ -1,3 +1,7 @@
+## About
+
+This tool was forked and modified to allow having Sorbet's `typed` and class description comments without being deleted.
+
 ## Annotate (aka AnnotateModels)
 
 [![Gem Version](https://badge.fury.io/rb/annotate.svg)](http://badge.fury.io/rb/annotate)
